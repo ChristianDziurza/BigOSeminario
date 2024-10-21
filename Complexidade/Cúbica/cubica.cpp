@@ -18,7 +18,7 @@ int main(){
     for(int i=0;i<n;i++)
         cin >> *(v+i);
     if(!Cubica(v,n,triplo))
-        cout << "Triplo nao encontrado" << endl;
+        cout << "Trigemeo nao encontrado" << endl;
 
     return 0;
 }
@@ -28,7 +28,7 @@ bool Cubica(int *vP, int n, int soma){
         for(int j = i+1; j < n-1; j++){
             for(int k = j+1; k < n; k++){
                 if(*(vP + i) + *(vP + j) + *(vP + k) == soma){
-                    cout << "Triplo encontrado: " << *(vP+i) << ", " << *(vP+j) << " e " << *(vP+k) << endl;
+                    cout << "Trigemeo encontrado: " << *(vP+i) << ", " << *(vP+j) << " e " << *(vP+k) << endl;
                     return true;
                 }
             }
